@@ -52,7 +52,7 @@
 
     <?php foreach($scripts as $script) : ?>
 
-      <link href="<?php echo base_url('public/' . $script); ?>" rel="stylesheet"> 
+      <script src="<?php echo base_url('public/' .$script); ?>"></script>
 
     <?php  endforeach ?>
   <?php endif?>
