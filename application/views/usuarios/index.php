@@ -32,7 +32,7 @@
                       <th>Usuario</th>
                       <th>Login</th>
                       <th>Ativo</th>
-                      <th class="text-right">Acoes</th>
+                      <th class="text-right no-sort">Ações</th>
                     </tr>
                   </thead>
                   <tbody>
