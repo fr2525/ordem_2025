@@ -48,9 +48,9 @@ class Usuarios extends CI_Controller {
     
             );
 
-            echo '<pre>';
-            print_r($data['usuario']);
-            exit();
+//            echo '<pre>';
+//            print_r($data['usuario']);
+//            exit();
 
             $this->load->view('layout/header', $data);
             $this->load->view('usuarios/edit');

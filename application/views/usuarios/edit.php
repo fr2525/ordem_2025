@@ -24,33 +24,24 @@
               <a title="Cadastrar novo usuário" href="" class="btn btn-success btn-sm float-right"><i class="fa-solid fa-user-plus"></i></i>&nbspNovo </a>
             </div>
             <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered dataTable" width="100%" cellspacing="0">
-                  <thead>
-                    <tr>
-                      <th>#</th>
-                      <th>Usuario</th>
-                      <th>Login</th>
-                      <th>Ativo</th>
-                      <th class="text-right no-sort">Ações</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <?php foreach ($usuarios as $usuario) :?>
-                    <tr>
-                      <td><?php echo $usuario->id ?></td>
-                      <td><?php echo $usuario->username ?></td>
-                      <td><?php echo $usuario->email ?></td>
-                      <td><?php echo $usuario->active ?></td>
-                      <td class="text-right">
-                        <a title="Editar" href="<?php echo base_url('usuarios/edit/'.$usuario->id) ?>" class="btn btn-primary"><i class="fas fa-user-edit"></i></a>
-                        <a title="Excluir"  href="" class="btn btn-danger"><i class="fas fa-user-times"></i></a>
-                      </td> 
-                    </tr>
-                    <?php endforeach; ?>
-                  </tbody>
-                </table>
-              </div>
+
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
             </div>
           </div>
 
