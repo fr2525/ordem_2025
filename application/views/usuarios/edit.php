@@ -13,7 +13,7 @@
 
   <nav aria-label="breadcrumb">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="<?php echo base_url("/"); ?>">Home</a></li>
+    <li class="breadcrumb-item"><a href="<?php echo base_url("usuarios"); ?>">Usuários</a></li>
     <li class="breadcrumb-item active" aria-current="page"><?php echo $titulo; ?></li>
   </ol>
 </nav>
@@ -21,7 +21,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <a title="Cadastrar novo usuário" href="" class="btn btn-success btn-sm float-right"><i class="fa-solid fa-user-plus"></i></i>&nbspNovo </a>
+              <a title="Voltar" href="<?php echo base_url('usuarios')?>" class="btn btn-success btn-sm float-right"><i class="fas fa-arrow-left"></i></i>&nbspVoltar </a>
             </div>
             <div class="card-body">
 
